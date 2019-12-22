@@ -4,7 +4,7 @@ import './Home.css'
 import '../../assets/styles/theme/DawnGolden/DawnGolden.css'
 import YellowButton from '../../components/ColorButton/ColorButton'
 import { Link, Redirect } from 'react-router-dom'
-import { Icon } from 'antd'
+import { Icon , Radio} from 'antd'
 
 const style1 = {
   width: '150px',
@@ -66,8 +66,10 @@ class Home extends React.Component<{}, InState> {
     return (
       <div className='Main'>
         <div className='header'>
-          <div className='canvas'>
+          <div className='canvasBack'>
+            <div className='canvas'>
             <span className='title'>Ethernal Intelligence</span>
+            </div>
           </div>
           <div className='userboard'>
             <div className='user' style={this.state.styleuser}>
@@ -90,19 +92,19 @@ class Home extends React.Component<{}, InState> {
                 <span>Username</span>
                 <div style={{ flexDirection: 'row',position:'relative' }}>
                 <Icon type="fire" style={{color:'#fae379',left:'0.5vw', top:'3vh',position:'absolute'}}/>
-                  <input></input>
+                  <input className='input' ></input>
                 </div>
                 <span>Password</span>
                 <div style={{ flexDirection: 'row',position:'relative' }}>
                 <Icon type="lock" style={{color:'#fae379',left:'0.5vw', top:'3vh',position:'absolute'}}/>
-                  <input type='password'></input>
+                  <input className='input' type='password'></input>
+                </div>
+                <div style={{ flexDirection: 'row', height:'4vh', fontSize:'14px'}}>
+                <Radio>记住密码</Radio>
                 </div>
                 <button className='submit' id='submit' type='submit' onMouseEnter={changeButton.bind(this, 'submit', '#01c501')} onMouseOut={changeButton.bind(this, 'submit', '#01c501')}>Submit And Sign Up</button>
                 <button className='reset' id='reset' type='reset' onClick={this.signinButton.bind(this)} onMouseEnter={changeButton.bind(this, 'reset', 'red')} onMouseOut={changeButton.bind(this, 'reset', 'red')}>Reset And Turn Back</button>
               </form>
-              <div className='illustration' style={{display:'none'}}>
-                <div className='forget'>If you forget your password, please click here</div>
-              </div>
             </div>
           </div>
         </div>
