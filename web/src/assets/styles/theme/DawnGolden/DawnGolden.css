@@ -1,0 +1,43 @@
+.Main {
+  background-color: #fdc644;
+  color: white;
+  margin: 0px;
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.canvas {
+  background-color: #fae379;
+}
+
+.title{
+  color:white;
+}
+
+::selection {
+  background: #fae379;
+  color: #ffffff;
+}
+::-moz-selection {
+  background: #fae379;
+  color: #ffffff;
+}
+
+.MainMessage {
+  color: wheat;
+}
+
+.signupboard{
+  background-color: #fae379;
+}
+
+.forget{
+  color:#f88c01;
+}
+
+.footer{
+  background-color: black;
+}

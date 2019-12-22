@@ -1,0 +1,11 @@
+.yellowbutton{
+    /* background:#fae379; */
+    border:0px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color:white; */
+    border-radius:10px;
+    outline:none;
+}
