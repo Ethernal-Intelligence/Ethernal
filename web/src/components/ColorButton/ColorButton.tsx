@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, Children } from 'react'
 import './ColorButton.css'
 
 class Style {
@@ -51,7 +51,7 @@ class YellowButton extends Component<Inprop, Instate> {
         })
     }
 
-    render() {
+    public render() {
         const { content, style1, style2 } = this.props;
         return (
             <button className='yellowbutton' style={this.state.style} onMouseOver={this.changeColor1.bind(this)} onMouseOut={this.changeColor2.bind(this)}>{content}</button>
