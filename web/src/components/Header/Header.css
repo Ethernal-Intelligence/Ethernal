@@ -1,0 +1,56 @@
+.Header{
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(250,225, 120, 0.5);
+}
+
+.Header .headerImg{
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 5vw;
+    margin-right: 1vw;
+}
+
+.Header .headerName{
+    margin-top: 2vh;
+    font-size: 15px;
+}
+
+.headerRing{
+    margin: 0 5vw 0;
+    background-color: white;
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.headerRing .ringImage{
+    width: 4vh;
+    height: 4vh;
+}
+
+.headerRing .message{
+    position: absolute;
+    background-color: red;
+    width: 2vh;
+    height: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transform: translate(2vh,-2vh);
+}
