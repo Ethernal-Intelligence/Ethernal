@@ -1,6 +1,5 @@
 import React from 'react'
 import './more.css'
-import { render } from '@testing-library/react'
 import Header from '../../components/Header/Header'
 
 

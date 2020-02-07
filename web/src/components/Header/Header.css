@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: rgba(250,225, 120, 0.5);
+    z-index: 99;
 }
 
 .Header .headerImg{
@@ -53,4 +54,6 @@
     align-items: center;
     border-radius: 50%;
     transform: translate(2vh,-2vh);
+    color:white;
+    font-size: 10px;
 }

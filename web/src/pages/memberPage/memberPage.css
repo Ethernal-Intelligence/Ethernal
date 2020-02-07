@@ -1,0 +1,53 @@
+.Main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.space{
+    position: absolute;
+    top:0;
+    background-color: rgba(250,225, 120);
+    width: 100vw;
+    height: 10vh;
+}
+
+.tabbar{
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    left: 2vw;
+}
+
+.tabbar .turnButton{
+    width: 40px;
+    height: 40px;
+    margin: 1vw;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 0.5vw;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:1px solid white;
+}
+
+.turnButton img{
+    width: 30px;
+}
+
+.turnButton img:hover{
+    width: 26px;
+}
+
+.peopleContent{
+    margin-top: 10vh;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 0.5vw;
+}
