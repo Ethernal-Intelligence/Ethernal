@@ -4,8 +4,18 @@ import './memberPage.css'
 import project from "../../assets/images/logo/project.png"
 import homework from "../../assets/images/logo/homework.png"
 import dongtai from "../../assets/images/logo/dongtai.png"
+import { withRouter } from 'react-router-dom'
 
 class memberPage extends React.Component {
+    click1(event){
+        this.props.history.push("/page1");
+    }
+    click2(event){
+        this.props.history.push("/page2");
+    }
+    click3(event){
+        this.props.history.push("/page3");
+    }
     render() {
         return (
             <div className="Main">
@@ -15,9 +25,9 @@ class memberPage extends React.Component {
                 ></Header>
                 <div className="space"></div>
                 <div className="tabbar">
-                    <div className="turnButton"><img src={project}></img></div>
-                    <div className="turnButton"><img src={homework}></img></div>
-                    <div className="turnButton"><img src={dongtai}></img></div>
+                    <div className="turnButton" oncliclk={this.click1} ><img src={project}></img></div>
+                    <div className="turnButton" oncliclk={this.click2}><img src={homework}></img></div>
+                    <div className="turnButton" oncliclk={this.click3}><img src={dongtai}></img></div>
                 </div>
                 <div className="peopleContent">
 
@@ -28,3 +38,4 @@ class memberPage extends React.Component {
 }
 
 export default memberPage
+
